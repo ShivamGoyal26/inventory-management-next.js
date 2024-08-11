@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "./(components)/navBar";
+import SideBar from "./(components)/sideBar";
 
 type DashboardWrapperProps = {
   children: React.ReactNode;
@@ -8,7 +9,7 @@ type DashboardWrapperProps = {
 const DashboardWrapper = ({ children }: DashboardWrapperProps) => {
   return (
     <div className="light flex bg-gray-50 text-gray-900 w-full min-h-screen">
-      SideBar
+      <SideBar />
       <main className="flex flex-col w-full h-full py-7 px-9 bg-gray-50 md:pl-24">
         <NavBar />
         {children}
